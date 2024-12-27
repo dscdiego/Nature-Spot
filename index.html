@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Site sobre animais como golfinhos, onças e panteras. Descubra curiosidades e informações incríveis.">
+  <title>Animais Fantástico</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Link do bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body style="background-color: #BBDEFB;">
+
+  <!-- Barra de Navegação -->
+  <nav class="navbar col-12 m-auto position-fixed navbar-expand-lg navbar-dark bg-dark p-3" style="z-index: 1000;">
+    <div class="container-fluid col-11 m-auto">
+      <a class="navbar-brand" href="#">Nature Spot
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#animais">Animais</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contato">Contato</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CARROSSEL -->
+
+  <div id="carouselExampleAutoplaying" class="carousel slide col-11 m-auto" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/alrvores.jpg" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/paisagem-natural-suica.webp" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="img/Paisagemm.jpg" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  <h2 class="text-center m-auto" id="animais">ANIMAIS</h2>
+
+  <!-- CARDS -->
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 col-11 m-auto">
+    <div class="col">
+      <div class="card">
+        <img src="img/golfinho.webp" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3 class="card-title">GOLFINHOS</h3>
+          <p class="card-text">Os golfinhos são mamíferos marinhos conhecidos por sua inteligência e comportamento
+            social. Vivem em grupos e utilizam sons e gestos para se comunicar. São excelentes nadadores e muitas vezes
+            ajudam outros animais, incluindo humanos, mostrando seu instinto amigável.</p>
+
+          <!-- Button SAIBA MAIS modal -->
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            Veja mais
+          </button>
+          <!-- FINAL DO BUTTON -->
+
+          <!-- INICIO DO MODAL -->
+          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="staticBackdropLabel">Golfinhos</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/modal-golfinhos.webp" width="466" alt="golfinho">
+                  <h3>Curiosidades sobre Golfinhos</h3>
+                  <p>1. Superinteligência:
+                    Os golfinhos estão entre os animais mais inteligentes do planeta. Eles possuem cérebros altamente
+                    desenvolvidos, capazes de resolver problemas, usar ferramentas e até brincar por diversão, algo raro
+                    no reino animal.
+                    <br>
+                    2. Comunicação Avançada:
+                    Golfinhos usam uma variedade de sons, como cliques e assobios, para se comunicar. Cada golfinho tem
+                    um “assobio assinatura”, algo como um nome próprio, que permite que outros o identifiquem.
+                    <br>
+                    3. Ajuda Mútua e Empatia:
+                    Golfinhos são incrivelmente sociais e ajudam membros de seu grupo que estão feridos ou doentes. Há
+                    registros de golfinhos protegendo humanos de tubarões no mar, o que destaca sua empatia.
+                    <br>
+
+
+                  </p>
+                </div>
+                <!-- BUTTON FECHAR MODAL -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-primary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- CARD DA ONÇA -->
+
+    <div class="col">
+      <div class="card">
+        <img src="img/onça.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">ONÇAS</h5>
+          <p class="card-text">As ONÇAS são os maiores felinos das Américas. Encontradas principalmente na Amazônia,
+            possuem uma pelagem dourada com manchas pretas que ajudam na camuflagem. Elas são ágeis caçadoras e, ao
+            contrário de muitos felinos, não têm medo da água, sendo ótimas nadadoras.</p>
+
+          <!-- Button SAIBA MAIS modal -->
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Veja mais
+          </button>
+          <!-- FINAL DO BOTAO SAIBA MAIS -->
+
+          <!-- INICIO DO MODAL -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>Onças
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/modal-onça.webp" width="465" alt="onça-pinstada">
+                  <h3>Curiosidades sobre ONÇAS</h3>
+                  <p>1. Onças são ótimas nadadoras
+                    Ao contrário da maioria dos felinos, as onças adoram água. Elas caçam dentro de rios e lagos,
+                    mostrando grande habilidade como nadadoras.
+                    <br>2. A mordida mais poderosa entre os felinos
+                    A onça possui a mordida mais forte de todos os felinos, sendo capaz de quebrar crânios e até cascos
+                    de tartarugas. Sua mordida é quase duas vezes mais forte que a de um leão! <br>
+                    3. Padrões únicos de manchas
+                    Cada onça tem um padrão único de manchas, assim como nossas impressões digitais. Isso ajuda
+                    pesquisadores a identificá-las individualmente. <br>
+                    4. "Pantera negra" pode ser uma onça
+                    Quando uma onça nasce com melanismo (excesso de pigmentação), ela é chamada de "pantera negra".
+                    Apesar de parecer totalmente preta, suas manchas ainda podem ser vistas sob luz intensa.
+
+                  </p>
+                </div>
+                <!-- BUTTON FECHAR MODAL -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+
+                  <!-- FINAL DO MODAL -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="img/pantera.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">PANTERA-NEGRA</h5>
+          <p class="card-text">
+            A pantera-negra é um dos animais mais fascinantes e enigmáticos do reino animal. Embora muitos pensem que ela é uma espécie à parte, a verdade é que o termo "pantera-negra" não se refere a uma espécie específica,
+            mas a grandes felinos com melanismo.</p>
+
+          <!-- MODAL PANTERA-NEGRA -->
+          <!-- Button SAIBA MAIS modal -->
+          <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModalPantera">
+            Saiba mais
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModalPantera" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h1 class="modal-title fs-5" id="exampleModalLabel">Pantera-Negra</h1>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <img src="img/modal-pantera.webp" width="466" alt="">
+                  <h3>Curiosidade sobre PANTERA-NEGRA</h3>
+                  <p>Características e Aparência
+                    A coloração negra da pantera é causada pelo excesso de melanina, um pigmento que dá a cor escura à
+                    sua pele e pelos. Apesar de parecer totalmente preta à primeira vista, suas manchas características
+                    (presentes em onças e leopardos) ainda são visíveis sob luz intensa. Essas marcas revelam sua
+                    verdadeira identidade como onça-pintada, encontrada nas Américas, ou leopardo, comum na Ásia e
+                    África.</p>
+
+                </div>
+                <!-- BOTÃO FECHAR MODAL -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <hr>
+  <br>
+
+  <div class="col-11 m-auto ">
+    <h2 class="text-center">Meu titulo</h2>
+    <p class="text-center">Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br> Sapiente asperiores
+      consequatur sequi illum, non eius, veniam fugit nesciunt, blanditiis similique suscipit? <br> Distinctio et, ut
+      molestiae rerum reprehenderit beatae. Perferendis, temporibus?</p>
+  </div>
+  <hr>
+  <!-- Contato whatssap -->
+  <div class="col-11 m-auto ">
+    <h2 class="text-center" id="contato">Contato</h2>
+    <div class="col-3 m-auto" style="width: 100px;">
+      <a href="https://wa.me/558594161656?text=Olá, Gostaria de saber mais informações" target="_blank">
+        <i class="fa-brands fa-whatsapp" style="font-size: 100px; color: green;"></i>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="text-center p-4" style="background-color: rgb(35, 48, 43);">
+      <a href="https://github.com/dscdiego" target="_blank">Copyright © 2024 | Direitos Reservados: DiegoDav</a>
+    </div>
+  </footer>
+
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
